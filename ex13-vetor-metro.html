@@ -58,12 +58,17 @@
                 passe um traço horizontal (<hr>).            
         */
         let Vazio = Array() // Forma tradicional
-        let Estações = ['Santa Teresinha' ,' Centro', ' Estação', ' Jardim Lima', ' Aerporto 1'] 
+        let Estações = [' Santa Teresinha' ,' Estação ', ' Centro', ' Jardim Lima', ' Aerporto 1'] 
         document.write(Estações + '<hr>')
         Estações.push(' City petropoles', ' Aeroporto IV')
         document.write(Estações + '<hr>')
-        
-
+        Estações.splice(1, 0, ' Vila Imperador')
+        Estações.splice(5, 0, ' Jardim Alvorada')
+        document.write(Estações + '<hr>')   
+        Estações [3] = ' 9 de Julho ' +',Champagnat '
+        document.write(Estações , '<hr>')
+        let retirado = Estações.shift()
+        document.write(Estações + '<hr>')
 
        
     </script>
