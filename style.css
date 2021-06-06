@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+            background-color: salmon;
+            font-family: "Indie Flower";
+        }
+        
+        h1{
+            color: springgreen;
+        }
+        h1.principal{
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+        p.id{
+            text-align: center;
+        }
+        img{
+            box-shadow: 1px 1px 4px black;
+            border-radius: 10px;
+            position: relative;
+            left: 220px;
+        }
+        p.frase{
+            text-align:right;
+        }  
