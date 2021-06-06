@@ -4,6 +4,13 @@ body{
             background-color: salmon;
             font-family: "Indie Flower";
         }
+                img{
+            box-shadow: 1px 1px 4px black;
+            border-radius: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         
         h1{
             color: springgreen;
@@ -18,12 +25,7 @@ body{
         p.id{
             text-align: center;
         }
-        img{
-            box-shadow: 1px 1px 4px black;
-            border-radius: 10px;
-            position: relative;
-            left: 220px;
-        }
+
         p.frase{
             text-align:right;
         }  
