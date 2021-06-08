@@ -5,8 +5,28 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
-
+.menus{
+    background-color: #0000;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+}
 header{
     width: 100%;
     height: 100vh;
@@ -48,6 +68,8 @@ header{
     text-shadow: .3rem .4rem 2px rgba(0,0,0,0.4);
     line-height: 3.5rem;
     margin-bottom: .23rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
 }
 .banner p{
     font-family: 'Comfortaa', cursive;
@@ -56,6 +78,8 @@ header{
     text-shadow: .2rem .2rem rgba(0,0,0,0.4);
     line-height: 3.5rem;
     margin-bottom: .23rem;
+     opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
 }
 .banner button{
     font-family: 'Arimo', sans-serif;
@@ -69,4 +93,67 @@ header{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+}
+@keyframes moveBanner{
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+.sidebar.show-menu{
+    right: 0;
+}
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.menu-link{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    color: #555555;
+    transition: color .5s;
+}
+.menu-link:hover{
+    color: #F0CB35;
+}
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-media i{
+    background: #C02425;
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);
+    background: linear-gradient(to left, #F0CB35, #C02425);
+    color: #fff;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
 }
