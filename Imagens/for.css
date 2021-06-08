@@ -9,17 +9,64 @@
 
 header{
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     overflow: hidden;
 }
 .img-wrapper{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
 }   
 
 .img-wrapper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 12.5s;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transfom: scale(1);
+    }
+}
+
+.banner{
+    position: absolute;
+    top: 56.5%;
+    left: 16.5%;
+}
+.banner h1{
+    font-family: 'Abril Fatface', cursive;
+    color: #EEB;
+    font-size: 2.55rem;
+    font-weight: 200;
+    text-shadow: .3rem .4rem 2px rgba(0,0,0,0.4);
+    line-height: 3.5rem;
+    margin-bottom: .23rem;
+}
+.banner p{
+    font-family: 'Comfortaa', cursive;
+    color: #EEB;
+    font-size: 1.44rem;
+    text-shadow: .2rem .2rem rgba(0,0,0,0.4);
+    line-height: 3.5rem;
+    margin-bottom: .23rem;
+}
+.banner button{
+    font-family: 'Arimo', sans-serif;
+    color: #EEB;
+    background: #C02425;
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);
+    background: linear-gradient(to left, #F0CB35, #C02425);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
