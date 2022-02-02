@@ -248,8 +248,8 @@ header{
 .sessao-header h1{
     font-family: 'Abril Fatface', cursive;
     font-size: 2.7rem;
-    color: #4d4d4d;
-    border-bottom: solid 3px #221b5a;
+    color: #5a5454;
+    border-bottom: solid 3px #9138c5;
     margin-bottom: 1.5rem;
 }
 .conhecimento-header{
@@ -268,4 +268,13 @@ header{
 .conhecimento-text {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1rem;
+}
+.conhecimentos-img-wrapper{
+    grid-column: 7 / 11;
+    grid-row: 2 / 4;
+    width: 100%;
+}
+.conhecimentos-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
 }
