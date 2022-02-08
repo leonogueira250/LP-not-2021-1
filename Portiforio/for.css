@@ -298,7 +298,7 @@ header{
     width: 100%;
     height: 100%;
     border-radius: .5rem;
-    opacity: .8;
+    opacity: .2;
     transition: opacity 0.3s;
 }
 .card:hover .card-img-wrapper img{
@@ -353,7 +353,9 @@ header{
     .sessao-contato{
         width: 100%;
         height: 100vh;
-        background-color: #272727;
+        background-color:#C02425;
+        background: -webkit-linear-gradient(to right, #F0CB35, #C02425);
+        background: linear-gradient(to left, #F0CB35, #C02425);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -386,3 +388,59 @@ header{
         font-weight: lighter;
         
     }
+    .sessao-contato form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-group{
+        position: relative;
+    }
+    .field{
+        background: transparent;
+        border: none;
+        width: 20rem;
+        font-size: 1.5rem;
+        font-family: 'Comfortaa', cursive;
+        border-bottom: 2px dashed #5a5454;
+        height: 1.5rem;
+        outline: none;
+        margin: 2rem 0;
+    }
+    .input-group textarea{
+        padding-top: 1.5rem;
+        max-width: 25rem;
+        max-height: 3rem;
+    }
+    .field-label{
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        font-size: 1.2rem;
+        font-family: 'Comfortaa', cursive;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        }
+
+        .field:focus ~ label{
+            top: 0;
+            font-size: 1rem;
+        }
+        .field:focus {
+            border-bottom: 1px solid;
+
+        }
+
+        .contato-button{
+            width: 75%;
+            height: 2.5rem;
+            background: #3821b8;
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.2rem;
+            color: #eeee;
+            border-radius: .5rem;
+            border: none;
+            box-shadow: 0 .1rem .8rem rgba(0,0,0,0 .4);
+            margin-top: 1rem;
+            }
