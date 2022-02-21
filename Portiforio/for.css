@@ -271,7 +271,7 @@ header{
 }
 .conhecimentos-img-wrapper{
     grid-column: 7 / 11;
-    grid-row: 3 / 6;
+    grid-row: 2 / 5;
     width: 100%;
 }
 .conhecimentos-img-wrapper img{
@@ -286,6 +286,7 @@ header{
     width: 20rem;
     height: 30rem;
     position: relative;
+    padding: 4rem;
 }
 .card-img-wrapper{
     width: 100%;
@@ -309,7 +310,7 @@ header{
     bottom: 0;
     opacity: 0;
     visibility: hidden;
-    padding: 2rem;
+    padding: 5rem;
     text-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.4);
     transition: all 0.3s;    
 }
@@ -433,7 +434,7 @@ header{
         }
 
         .contato-button{
-            width: 75%;
+            width: 50%;
             height: 2.5rem;
             background: #3821b8;
             font-family: 'Comfortaa', cursive;
