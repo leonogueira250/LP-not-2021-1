@@ -1,0 +1,51 @@
+/*Corpo*/
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.navbar {
+padding: 20px;
+}
+.navbar-esquerda {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* MESSI LOGO*/
+.navbar-esquerda img {
+    position: absolute;
+    width: 44px;
+    height: 49px;
+    left: 190px;
+    top: 25px;
+}
+.navbar-esquerda h1{
+position: absolute;
+align-items: center;
+width: 77px;
+height: 29px;
+left: 245px;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 29px;
+
+color: #272727;
+}
+.menus  {
+position: absolute;
+display: flex;
+align-items: center;
+right: 260px;
+
+
+}
+.menus > *{
+    padding: 15px;
+}
